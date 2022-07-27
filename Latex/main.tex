@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[brazil, english]{babel} % Escrita em vários idiomas
+\usepackage[hidelinks]{hyperref}    % Criação de links
+\usepackage[utf8]{inputenc}         % Codificação do documento
+\usepackage[T1]{fontenc}            % Seleção de código de fonte
+\usepackage{booktabs}               % Réguas horizontais em tabelas
+\usepackage{color, colortbl}        % Uso de cores
+\usepackage{graphicx}               % Inclusão de gráficos
+\usepackage{indentfirst}            % Recua o primeiro parágrafo de cada seção
+\usepackage{microtype}              % Melhora a justificação do documento
+\usepackage{makecell}               % Tabelas com múltiplas linhas e colunas
+\usepackage{multirow, multicol}     % Layout em múltiplas linhas e colunas
+\usepackage{verbatim}               % Exibe texto tal como escrito no documento
+\usepackage{icomma}                 % Vírgulas em expressões matemáticas
+\usepackage{subeqnarray}            % Subenumeração de equações
+\usepackage{amsmath}                % Funções matemáticas
+\usepackage[charter]{mathdesign}    % Utiliza a fonte 'Charter BT'
+%\usepackage{newtxtext, newtxmath}  % Utiliza a fonte 'Times New Roman' (clone)
+%\usepackage{palatino}              % Utiliza a fonte 'Palatino' (clone)
+%\usepackage{lmodern}               % Utiliza a fonte 'Computer Modern'
+%\usepackage{amsfonts}              % Fontes e símbolos matemáticos
+%\usepackage{latexsym}              % Mais símbolos matemáticos
+%\usepackage{xfrac}                 % Escreve frações de forma compacta
+
+% -----------------------------------------------------------------------------
+% Preâmbulo
+% -----------------------------------------------------------------------------
+
+\title{Title}
+\author{Author}
+\date{}
+
+% -----------------------------------------------------------------------------
+% Configurações
+% -----------------------------------------------------------------------------
+
+% Define as cores utilizadas no documento
+\definecolor{blue_link}{RGB}{0,80,128}
+
+% Configuração dos links do PDF (pacote: 'hyperref')
+\makeatletter
+\hypersetup{%
+    portuguese,
+    colorlinks=true,        % true: links coloridos; false: links em caixas
+    linkcolor=blue_link,    % Cor dos links internos
+    citecolor=blue_link,    % Cor dos links para as citações
+    filecolor=blue_link,    % Cor dos links para arquivos
+    urlcolor=blue_link,     % Cor dos links de URLs
+    breaklinks=true,
+    pdftitle={\@title},
+    pdfauthor={\@author},
+    pdfsubject={},
+    pdfkeywords={}
+}
+\makeatother
+
+% -----------------------------------------------------------------------------
+% Início do documento
+% -----------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+Hello, World!
+
+\end{document}
