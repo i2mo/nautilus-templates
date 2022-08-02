@@ -1,12 +1,14 @@
 # File used by Conda (if you use it)
 # to install the necessary dependencies for the project.
 
-name: opencv-env
+name: my-env
 
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 
 dependencies:
-  - python==3.8.5
-  - opencv
+  - python=>3.0
+  - pip
+  - pip:
+    - numpy
