@@ -15,7 +15,7 @@ _main() {
 _log() {
     local MESSAGE=$1
 
-    logger -s "[$SCRIPT_NAME] $MESSAGE"
+    logger --stderr "[$SCRIPT_NAME] $MESSAGE"
 }
 
 _main "$@"
