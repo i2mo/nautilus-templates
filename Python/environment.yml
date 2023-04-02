@@ -8,4 +8,4 @@ dependencies:
   - python=>3.0
   - pip
   - pip:
-    - numpy
+    - -r requirements.txt
